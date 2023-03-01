@@ -8,4 +8,5 @@ class Article(models.Model):
     content = models.TextField()
     author = models.CharField(max_length=30)
     tag = models.CharField(max_length=30, default='')
-    img = models.BinaryField(default=b'')
+    img = models.FileField(default='')
+    img2 = models.ImageField(default='')
