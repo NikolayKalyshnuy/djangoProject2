@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <title>Домашняя страница</title>
+    <link rel="stylesheet" href="{%  static 'home.css' %}">
+{% endblock %}
 {% block body %}
     {% include 'header.html' %}
     <main>
