@@ -13,3 +13,7 @@ def home(request):
 
 def re_home(request):
     return HttpResponse('<h1>qwertyu</h1>')
+
+def form(request):
+    request.GET['inp1']
+    return
